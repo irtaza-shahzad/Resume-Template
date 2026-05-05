@@ -1,0 +1,191 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage[margin=1.4cm]{geometry}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.15in}
+ \addtolength{\textwidth}{0.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{0pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}\vspace{0pt}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Large \scshape Your Full Name} \\[2mm]
+    \footnotesize \raisebox{-0.1\height}
+    \faPhone\ \underline{(000) 000-0000} ~ 
+    {\faEnvelope\  \underline{youremail@example.com}} ~ 
+    {\faLinkedin\ \underline{\href{https://www.linkedin.com/in/your-profile/}{linkedin.com/in/your-profile}}  ~
+    {\faGithub\ \underline{\href{https://github.com/your-username}{github.com/your-username}} ~
+    {\faBriefcase\ \underline{\href{https://portfolio.vercel.app/}{portfolio.vercel.app/}}
+    \vspace{-8pt}
+\end{center}
+
+ %-----------EDUCATION-----------
+\section{Education} \\[1mm]
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Your University Name}{Expected Graduation: Month Year}
+      {Bachelor of Computer Science | Minor in Your Minor
+      }{City, Country}
+  \resumeSubHeadingListEnd
+    \resumeItemListStart
+        \resumeItem {Relevant Scholarship or Award | \textbf{GPA: X.XX}}
+        \vspace{-7pt}
+        \resumeItem {Courses: Data Structures and Algorithms, Operating Systems, Database Systems, Computer Networks, Software Engineering, Machine Learning, Computer Architecture, Discrete Mathematics}
+    \resumeItemListEnd
+    \vspace{-12pt}
+%-----------Experience---------------
+\section{Work Experience}
+    \resumeSubHeadingListStart
+                \resumeSubheading{Company Name}{Month Year -- Month Year}{Software Engineer Intern}{City, Country} 
+                \resumeItemListStart
+                    \resumeItem{Built and deployed \textbf{RESTful APIs} using \textbf{Node.js} and \textbf{Express}, reducing average response time by \textbf{40\%} and cutting backend error rates by \textbf{25\%}}
+                    \resumeItem{Collaborated with \textbf{10+} engineers to migrate a monolithic codebase to \textbf{microservices} on \textbf{AWS}, improving deployment frequency by \textbf{30\%} and system reliability}
+                    \resumeItem{Wrote unit and integration tests with \textbf{Jest} and \textbf{Pytest}, raising code coverage from \textbf{45\%} to \textbf{85\%} and reducing production incidents by \textbf{20\%}}
+                    \resumeItemListEnd
+            \resumeSubheading{Company Name}{Month Year -- Month Year}{Backend Developer Intern}{City, Country} 
+                \resumeItemListStart
+                    \resumeItem{Designed \textbf{20+} \textbf{PostgreSQL} schemas and optimized slow queries through indexing, achieving a \textbf{35\%} improvement in database performance across key services}
+                    \resumeItem{Built an internal \textbf{React} and \textbf{TypeScript} reporting dashboard, automating workflows that previously required \textbf{5+ hours} of manual work per week}
+                    \resumeItem{Integrated \textbf{OAuth 2.0} and a third-party payment API, enabling secure authentication and transactions for over \textbf{2,000} active users}
+                    \resumeItemListEnd
+            \resumeSubheading{Company Name}{Month Year -- Month Year}{Junior Web Developer Intern}{City, Country}
+                \resumeItemListStart
+                    \resumeItem{Deployed a \textbf{Python}-based data pipeline on \textbf{Azure}, cutting data transfer time by \textbf{50\%} for over \textbf{50 terabytes} of business-critical records}
+                    \resumeItem{Redesigned a \textbf{SQL} database infrastructure, improving query performance by \textbf{30\%} and data accessibility for \textbf{30+} internal stakeholders}
+                    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    \vspace{-12pt}
+
+%-----------PROJECTS-----------
+\section{Projects} 
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+            {\textbf{{Campus Event Planner}} $|$ \emph{\href{https://your-project-link.vercel.app/}{Website}{ $|$ }\href{https://github.com/your-username/your-repo}{Source Code}}}{ReactJS $|$ Spring Boot $|$ PostgreSQL}
+            \\[5mm]
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web application enabling \textbf{500+ students} to discover, RSVP, and manage campus events in real time}
+            \resumeItem{Utilized \textbf{PostgreSQL} for data persistence, \textbf{Spring Boot} for a \textbf{RESTful API} backend, and \textbf{ReactJS} for a dynamic user interface}
+          \resumeItemListEnd
+ \vspace{-20pt}
+ \resumeProjectHeading
+            {\textbf{{Study Group Finder}} $|$ \emph{\href{https://your-project-link.vercel.app/}{Website}}}{NextJS $|$ TypeScript $|$ Firebase}
+            \\[5mm]
+          \resumeItemListStart
+            \resumeItem{\textbf{Led the development} of a full-stack platform connecting \textbf{800+ university students} for collaborative study sessions, built with \textbf{NextJS} and \textbf{TypeScript} on the frontend, \textbf{Firebase} for real-time database and auth, and a \textbf{Node.js} backend}
+          \resumeItemListEnd
+ \vspace{-17pt}
+ \resumeProjectHeading
+{\textbf{{Stock Price Predictor}} $|$ \emph{\href{https://your-project-link.vercel.app/}{Website}{ $|$ }\href{https://github.com/your-username/your-repo}{Source Code}}}{Pandas $|$ Scikit-Learn $|$ Python}
+\\[5mm]
+\resumeItemListStart
+\resumeItem{Built a machine learning model to forecast stock prices using \textbf{LSTM neural networks}, \textbf{pandas} for data preprocessing, and \textbf{scikit-learn} for feature engineering and evaluation}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-12pt}
+  %-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{   
+     \textbf{Languages}{: Python, Java, JavaScript, TypeScript, C++, SQL, HTML5, CSS, Bash} \\[1mm]
+     \textbf{Developer Tools}{: Git, Docker, AWS, Linux, VS Code, Postman, Figma, Jira} \\[1mm]
+     \textbf{Libraries/Frameworks}{: React, Node.js, Spring Boot, Express, PostgreSQL, MongoDB, scikit-learn} \\ [1mm]
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+ \vspace{3pt}
+\vspace{10pt}
+
+\vspace{-15pt}
+
+
+
+\end{document}
