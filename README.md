@@ -47,7 +47,7 @@ Open `template.tex` and swap in your own details. Here's what each section cover
 **Locally:**
 
 ```bash
-pdflatex main.tex
+pdflatex template.tex
 ```
 
 This will generate `resume.pdf` in the same directory.
