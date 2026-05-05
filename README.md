@@ -18,7 +18,7 @@ No installation needed.
 You'll need TeX Live or MiKTeX installed on your machine, then:
 
 ```bash
-git clone https://github.com/yourusername/cs-resume-template.git
+git clone https://github.com/irtaza-shahzad/Resume-Template.git
 cd cs-resume-template
 ```
 
